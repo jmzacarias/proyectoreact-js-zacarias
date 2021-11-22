@@ -1,13 +1,12 @@
 import React from 'react';
-import { Divider } from 'semantic-ui-react';
 import './ItemListContainer.css'
 
 
-const ItemListContainer = () => {
+const ItemListContainer = (props) => {
     return (
         <div className='ItemListContainer'>
             <h1 className='ItemListTitleContainer-Title'>
-                Ofertas    
+                {props.title} 
             </h1>
         </div>
     )

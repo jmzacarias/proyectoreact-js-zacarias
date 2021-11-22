@@ -1,17 +1,21 @@
-import React, { Fragment } from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 
-function App() {
-  return (
-    <Fragment>
-      <header>
-        <NavBar />
-        <ItemListContainer />       
-      </header>
-    </Fragment>   
-  );
+class App extends Component {
+  render() { 
+    return (
+      <>
+        <header>
+          <NavBar />
+          <ItemListContainer 
+            title='Hola Usuario!'
+          />       
+        </header>
+      </>   
+    );
+  }
 }
 
 export default App;
