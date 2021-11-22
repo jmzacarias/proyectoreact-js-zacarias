@@ -2,11 +2,11 @@ import React from 'react';
 import './ItemListContainer.css'
 
 
-const ItemListContainer = (props) => {
+const ItemListContainer = ({greeting}) => {
     return (
         <div className='ItemListContainer'>
             <h1 className='ItemListTitleContainer-Title'>
-                {props.title} 
+                {greeting} 
             </h1>
         </div>
     )

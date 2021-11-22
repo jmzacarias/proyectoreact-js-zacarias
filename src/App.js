@@ -10,7 +10,7 @@ class App extends Component {
         <header>
           <NavBar />
           <ItemListContainer 
-            title='Hola Usuario!'
+            greeting='Hola Usuario!'
           />       
         </header>
       </>   
