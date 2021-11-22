@@ -1,0 +1,15 @@
+.counterContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+}
+
+.counterBtn {
+  display: flex;
+  justify-content: center;
+}
