@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react';
 import Item from './components/Item/Item';
 
 const ItemList = () => {
-    const [products, setUsers] = useState([]);
+    const [products, setProducts] = useState([]);
     useEffect(()=>{
         fetch('https://api.github.com/users')
             .then((response)=> response.json())
-            .then((json)=> setUsers(json));
+            .then((json)=> setProducts(json));
     }, [])
     return (
         <div className='ProductContainer'>
