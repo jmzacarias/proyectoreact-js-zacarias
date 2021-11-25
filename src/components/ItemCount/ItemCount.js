@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
-import './Counter.css';
+import './ItemCount.css';
 
-const Counter = () => {
+const ItemCount = () => {
     const [counter, setCounter] = useState(0);
     const [stock] = useState(20);
     
@@ -15,8 +15,9 @@ const Counter = () => {
                 <button onClick={()=> {
                     if (counter > 0) {setCounter(counter - 1)}}}>Disminuir</button>
             </div> 
+
         </section> 
     )
 }
 
-export default Counter
+export default ItemCount

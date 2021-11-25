@@ -1,6 +1,6 @@
 import React from 'react';
-import './ItemListContainer.css'
-
+import './ItemListContainer.css';
+import ItemList from './components/ItemList/ItemList';
 
 const ItemListContainer = ({greeting}) => {
     return (
@@ -8,8 +8,10 @@ const ItemListContainer = ({greeting}) => {
             <h1 className='ItemListTitleContainer-Title'>
                 {greeting} 
             </h1>
+
+            <ItemList />
         </div>
     )
 }
 
-export default ItemListContainer
+export default ItemListContainer;
