@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, Image } from 'semantic-ui-react';
+import ItemCount from '../ItemCount/ItemCount';
 
 const Item = ({ data }) => (
   <Card>
@@ -10,6 +11,7 @@ const Item = ({ data }) => (
         <span className='date'>{data.id}</span>
       </Card.Meta>
       <Card.Description>{data.url}</Card.Description>
+      <ItemCount stock={5} initial={0} />
     </Card.Content>
   </Card>
 );

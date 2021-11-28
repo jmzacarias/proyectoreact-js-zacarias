@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
-import './ItemCount.css';
 
-const ItemCount = () => {
-    const [counter, setCounter] = useState(0);
-    const [stock] = useState(20);
+
+const ItemCount = ({ stock, initial }) => {
+        const [counter, setCounter] = useState(initial);
+    
     
 
     return (
