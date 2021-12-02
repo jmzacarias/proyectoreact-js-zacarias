@@ -19,7 +19,13 @@ const ItemListContainer = () => {
             <h1 className='ItemListTitleContainer-Title'>
                OFERTAS
             </h1>
-            <ItemList items={items} />
+                {
+                    items.length > 0 ?
+                        <ItemList items={items} />
+                        :
+                        <p>Cargando...</p>
+
+                }            
         </div>
     )
 }
