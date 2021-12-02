@@ -14,9 +14,7 @@ class App extends Component {
             <NavBar />
           </header>
           <main>
-            <ItemListContainer 
-              greeting='Hola Usuario!' />  
-            
+            <ItemListContainer />  
           </main>
       </>   
     );

@@ -1,19 +1,22 @@
-import React from 'react';
-import { Card, Image } from 'semantic-ui-react';
-import ItemCount from '../ItemCount/ItemCount';
+import React from 'react'
+import './Item.css';
 
-const Item = ({ data }) => (
-  <Card>
-    <Image src={data.avatar_url} wrapped ui={false} />
-    <Card.Content>
-      <Card.Header>{data.login}</Card.Header>
-      <Card.Meta>
-        <span className='date'>{data.id}</span>
-      </Card.Meta>
-      <Card.Description>{data.url}</Card.Description>
-      <ItemCount stock={5} initial={0} />
-    </Card.Content>
-  </Card>
-);
+const Item = ({ item }) => {
+    return (
+        <>
+            <div className='ui cards'>
+                <div className='image'>
+                    <img src={item.thumbnail} alt='imagen'></img>
+                </div>
+                <div className='content'>
+                    <div className='header'>${item.price}</div>
+                    <div className='meta'>{item.category_id}</div>
+                    <div className='description'>item.title</div>
+                </div>
+             
+            </div>
+        </>
+    )
+}
 
-export default Item;
+export default Item

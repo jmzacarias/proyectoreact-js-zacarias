@@ -1,22 +1,18 @@
-import React, { useEffect, useState } from 'react';
-import Item from '../Item/Item';
+import React from 'react'
+import Item from '../Item/Item'
 
-const ItemList = () => {
-    const [products, setProducts] = useState([]);
-    useEffect(()=>{
-        fetch('https://api.github.com/users')
-            .then((response)=> response.json())
-            .then((json)=> setProducts(json));
-    }, [])
+const ItemList = ( {items }) => {
     return (
-        <div className='ProductContainer'>
-          <h1>Productos</h1>
-          <div className='Item'>{products.map((product)=>{
-              return <Item data={product} key={product.id}/>;
-          })}</div>
+        <div>
+            <>
+            {
+                items.map((item) => (
+                    <Item item={item} key={item.id}/>
+                ))
+            }
+            </>
         </div>
-    );
-};
+    )
+}
 
-export default ItemList;
-
+export default ItemList
