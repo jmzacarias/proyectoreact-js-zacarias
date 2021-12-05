@@ -1,3 +1,5 @@
+En este proyecto utilicé API de Mercado Libre para realizar el e-commercee modelo el cual será reemplazado cuando lleguemos en este curso a conocer métodos de incluir elementos propios.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
