@@ -4,6 +4,7 @@ import ItemDetailContainer from '../components/ItemDetailContainer/ItemDetailCon
 
 const ItemView = () => {
     const params = useParams();
+    console.log('params', params)
     return (
         <div>
             <ItemDetailContainer itemId={params.id}/>
