@@ -1,14 +1,15 @@
 import React from 'react'
 import Item from '../Item/Item'
 import 'semantic-ui-css/semantic.min.css';
+import './ItemList.css';
 
 const ItemList = ( {items }) => {
     return (
-        <div>
+        <div className='ItemListContainer-Products'>
             <>
             {
                 items.map((item) => (
-                   <div className='four wide column' key={item.id}>
+                   <div key={item.id}>
                        <Item item={item} />
                     </div> 
                 ))

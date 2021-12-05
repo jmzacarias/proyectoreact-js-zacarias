@@ -1,8 +1,4 @@
-.ItemListContainer {
-  display: flex;
-  justify-content: center;
-}
-
 .ItemListTitleContainer-Title {
-  color: green;
+  color: rgb(5, 164, 5);
+  text-align: center;
 }

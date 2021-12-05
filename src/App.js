@@ -1,25 +1,33 @@
 import React, { Component } from 'react';
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import Home from './views/Home'
+import Category from './views/Category'
+
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
 
 class App extends Component {
 
-  render() { 
+  render() {    
     return (
-      <>
-          <header>
-            <NavBar />
-          </header>
-          <main>
-            <ItemListContainer />  
-            <ItemDetailContainer />
-          </main>
-      </>   
-    );
+      <Router> 
+        <>
+            <header>
+              <NavBar />
+            </header>
+            <main>          
+              <Routes>
+                <Route path='/' element={<Home />}/>
+                <Route path='/category/:categoryId' element={<Category />}/>
+                <Route path='/item/:id' element={<ItemDetailContainer />}/>
+              </Routes>
+            </main>
+        </> 
+      </Router>   
+    );    
   }
 }
 
