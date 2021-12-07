@@ -1,0 +1,9 @@
+.ItemDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(61, 59, 59);
+}
+img {
+  margin-top: 5%;
+}

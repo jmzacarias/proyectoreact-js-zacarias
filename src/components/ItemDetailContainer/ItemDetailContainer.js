@@ -5,6 +5,8 @@ import ItemDetail from '../ItemDetail/ItemDetail'
 const ItemDetailContainer = ( {itemId} ) => {
     const [item, setItem] = useState([])
     const [loading, setLoading] = useState(true)
+    
+
 
     useEffect(() => {
         setTimeout(() => {
